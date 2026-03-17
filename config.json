@@ -1,0 +1,22 @@
+{
+  "data_source": {
+    "type": "csv",
+    "path": "data/raw/2000000 BT Records.csv",
+    "batch_size": 100000
+  },
+  "database": {
+    "connection_string": null,
+    "batch_size": 10000,
+    "truncate_tables": true
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/etl_pipeline.log",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "processing": {
+    "create_daily_summary": true,
+    "validate_data": true,
+    "save_intermediate": true
+  }
+}
